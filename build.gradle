@@ -30,6 +30,11 @@ dependencies {
 	compile files("${System.properties['java.home']}/../lib/tools.jar")
 }
 
+jar {
+	baseName = <your-jar name>
+	enabled=true
+}
+
 bootRun {
     systemProperty 'java.library.path', 'dll'
 }
