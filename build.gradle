@@ -30,9 +30,11 @@ dependencies {
 	compile files("${System.properties['java.home']}/../lib/tools.jar")
 }
 
-jar {
-	baseName = <your-jar name>
-	enabled=true
+
+jar.enabled = true
+
+war {
+    classpath = jar.outputs.files + configurations.runtime - configurations.providedRuntime
 }
 
 bootRun {
