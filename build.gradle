@@ -4,7 +4,13 @@ plugins {
 }
 
 apply plugin: 'io.spring.dependency-management'
+
 jar.enabled = true
+
+war {
+    classpath = jar.outputs.files + configurations.runtime - configurations.providedRuntime
+}
+
 
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
