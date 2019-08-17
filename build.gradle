@@ -27,7 +27,7 @@ dependencies {
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-websocket', version: '2.1.1.RELEASE'
     
     testCompile('org.springframework.boot:spring-boot-starter-test')
-	
+	compile files("${System.properties['java.home']}/../lib/tools.jar")
 }
 
 bootRun {
