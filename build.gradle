@@ -31,12 +31,6 @@ dependencies {
 }
 
 
-jar.enabled = true
-
-war {
-    classpath = jar.outputs.files + configurations.runtime - configurations.providedRuntime
-}
-
 bootRun {
     systemProperty 'java.library.path', 'dll'
 }
