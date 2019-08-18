@@ -89,12 +89,12 @@ public class IndividualTrainingService {
 	
 	/**
 	 * Zwraca wszystkie informacje na temat treningu w postaci listy rekordow, gdzie w pierwszym obiekcie mamy
-	 * informacje o po³o¿eniu bil bialej oraz zaznaczonej i okreslony poziom trudnosci.
-	 * Kolejne obiekty s¹ reprezentacja pojedynczych bil przeszkadzajacych lub wspolzednych dla rysowanego prostokata
+	 * informacje o polozeniu bil bialej oraz zaznaczonej i okreslony poziom trudnosci.
+	 * Kolejne obiekty sa reprezentacja pojedynczych bil przeszkadzajacych lub wspolzednych dla rysowanego prostokata
 	 * @param id Treningu indywidualnego
 	 * @return
 	 */
-	// W bazie nie mo¿e byæ nullów
+	// W bazie nie moze byc nullow
 	 public List<IndividualTrainingCommand> returnIndividualTrainingCommand(long id){
 		 
 		 List<IndividualTrainingCommand> individualTrainingCommandList = new ArrayList<>();
@@ -143,7 +143,7 @@ public class IndividualTrainingService {
 	 	 
 	 /**
 	  * Zapisuje nowy rekord do bazy
-	  * W JSONIE kolejne wspolzedne s¹ podawane jako X,Y,X,Y kazda kolejna para to pojedyncza bila
+	  * W JSONIE kolejne wspolzedne sa podawane jako X,Y,X,Y kazda kolejna para to pojedyncza bila
 	  * @param individualTrainingCommand
 	  * @return
 	  */
